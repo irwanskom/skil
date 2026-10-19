@@ -5,7 +5,7 @@ description: Cek status sertifikat halal di situs BPJPH (bpjph.halal.go.id) untu
 
 # Cek Sertifikat Halal BPJPH
 
-Skrip: `cek-halal/cek_halal.py` di root repo ini (dua folder di atas `${CLAUDE_SKILL_DIR}/..`).
+Skrip: `cek-halal/cek_halal.py` di root repo ini, yaitu `${CLAUDE_SKILL_DIR}/../../../cek-halal/cek_halal.py`.
 Situs BPJPH hanya bisa diakses dari komputer pengguna (jaringan Indonesia), bukan dari sesi cloud.
 Kalau situs tidak bisa dibuka (403, DNS gagal), beri tahu pengguna untuk menjalankan Claude Code di komputernya sendiri.
 
