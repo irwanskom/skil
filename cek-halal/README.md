@@ -45,3 +45,12 @@ Kalau muncul captcha, selesaikan di jendela browser lalu tekan Enter di Command 
 - Kolom `sumber` di CSV menunjukkan asal datanya: `api`, `tabel`, `teks`, atau `error`.
 
 Gunakan dengan jeda yang wajar supaya tidak membebani server BPJPH.
+
+## Lewat Claude Code (cukup dengan perintah)
+
+Buka folder repo `skil` di Claude Code **di komputer Anda sendiri**, lalu ketik misalnya:
+
+> cek sertifikat halal ID32110081424521026 dan "Cap Rajawali"
+
+Claude memakai skill `.claude/skills/cek-halal` untuk menjalankan skrip ini dan menampilkan hasilnya.
+Sesi Claude Code di cloud (claude.ai/code) tidak bisa membuka situs BPJPH.
