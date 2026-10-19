@@ -17,13 +17,13 @@ hasilnya ke CSV (bisa dibuka di Excel).
 ## Pemakaian
 
 1. Isi `daftar.txt`, satu kata kunci per baris.
-2. Jalankan dari folder ini:
+2. Jalankan dari folder ini (skripnya ada di folder skill `.claude\skills\cek-halal\scripts\`):
    ```
-   py cek_halal.py daftar.txt
+   py ..\.claude\skills\cek-halal\scripts\cek_halal.py daftar.txt
    ```
    Atau langsung tulis kata kuncinya (pakai tanda kutip kalau ada spasi):
    ```
-   py cek_halal.py ID32110081424521026 "Toko Roti Contoh"
+   py ..\.claude\skills\cek-halal\scripts\cek_halal.py ID32110081424521026 "Toko Roti Contoh"
    ```
 3. Hasil tersimpan di `hasil\hasil_TANGGAL_JAM.csv`.
 
@@ -48,7 +48,14 @@ Gunakan dengan jeda yang wajar supaya tidak membebani server BPJPH.
 
 ## Lewat Claude Code (cukup dengan perintah)
 
-Buka folder repo `skil` di Claude Code **di komputer Anda sendiri**, lalu ketik misalnya:
+Buka folder repo `skil` di Claude Code **di komputer Anda sendiri**, atau salin skill-nya ke folder skill pribadi
+supaya aktif di folder mana pun:
+
+```
+xcopy /E /I /Y .claude\skills\cek-halal %USERPROFILE%\.claude\skills\cek-halal
+```
+
+Lalu ketik misalnya:
 
 > cek sertifikat halal ID32110081424521026 dan "Cap Rajawali"
 
