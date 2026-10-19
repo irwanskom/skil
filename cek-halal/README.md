@@ -21,6 +21,10 @@ hasilnya ke CSV (bisa dibuka di Excel).
    ```
    py cek_halal.py daftar.txt
    ```
+   Atau langsung tulis kata kuncinya (pakai tanda kutip kalau ada spasi):
+   ```
+   py cek_halal.py ID32110081424521026 "Toko Roti Contoh"
+   ```
 3. Hasil tersimpan di `hasil\hasil_TANGGAL_JAM.csv`.
 
 Kalau muncul captcha, selesaikan di jendela browser lalu tekan Enter di Command Prompt.

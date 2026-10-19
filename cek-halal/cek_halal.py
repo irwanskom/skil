@@ -9,6 +9,7 @@ atau teks di halaman.
 
 Pemakaian (Windows):
     py cek_halal.py daftar.txt               # cek semua baris di daftar.txt
+    py cek_halal.py ID321100... "Toko Ani"   # atau langsung kata kuncinya
     py cek_halal.py daftar.txt --inspect     # mode pengintai: hanya baris pertama,
                                              # simpan HTML, screenshot, dan daftar
                                              # request jaringan ke folder debug/
@@ -216,17 +217,25 @@ def write_csv(rows, path):
 
 def main():
     parser = argparse.ArgumentParser(description="Cek sertifikat halal BPJPH dari daftar kata kunci.")
-    parser.add_argument("input", help="file .txt, satu nomor registrasi / nama usaha / produk per baris")
+    parser.add_argument(
+        "input", nargs="+",
+        help="file .txt (satu kata kunci per baris) atau langsung nomor registrasi / nama usaha / produk",
+    )
     parser.add_argument("--inspect", action="store_true", help="mode pengintai (baris pertama saja)")
     parser.add_argument("--delay", type=float, default=4.0, help="jeda antar-pencarian (detik)")
     parser.add_argument("--headless", action="store_true", help="tanpa jendela browser")
     parser.add_argument("--out", default="hasil", help="folder hasil")
     args = parser.parse_args()
 
-    queries = [line.strip() for line in Path(args.input).read_text(encoding="utf-8-sig").splitlines()]
-    queries = [q for q in queries if q and not q.startswith("#")]
+    queries = []
+    for item in args.input:
+        if Path(item).is_file():
+            lines = Path(item).read_text(encoding="utf-8-sig").splitlines()
+            queries += [q.strip() for q in lines if q.strip() and not q.strip().startswith("#")]
+        else:
+            queries.append(item.strip())
     if not queries:
-        sys.exit("File input kosong.")
+        sys.exit("Tidak ada kata kunci untuk dicek.")
     if args.inspect:
         queries = queries[:1]
 
