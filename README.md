@@ -5,6 +5,7 @@ Plugin Claude Code berisi dua skill:
 | Skill | Fungsi |
 |---|---|
 | `ui-ux-pro-max` | Panduan desain UI/UX (gaya, warna, font, aturan UX) untuk website dan aplikasi |
+| `design-taste-frontend` | Desain landing page, portofolio, dan redesign yang tidak terlihat template (sumber: Leonxlnx/taste-skill, MIT) |
 | `cek-halal` | Cek status sertifikat halal di situs BPJPH dari nomor registrasi, nama usaha, atau produk |
 
 ## Pasang (sekali saja)

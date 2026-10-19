@@ -1,17 +1,21 @@
 {
   "name": "irwanskom",
-  "owner": { "name": "irwanskom" },
+  "owner": {
+    "name": "irwanskom"
+  },
   "metadata": {
     "description": "Plugin Claude Code milik irwanskom",
-    "version": "1.0.0"
+    "version": "1.1.0"
   },
   "plugins": [
     {
       "name": "skil",
       "source": "./",
-      "description": "ui-ux-pro-max (panduan desain UI/UX) dan cek-halal (cek sertifikat halal BPJPH).",
-      "version": "1.0.0",
-      "author": { "name": "irwanskom" }
+      "description": "ui-ux-pro-max (panduan desain UI/UX), design-taste-frontend (desain landing page yang tidak terlihat template), dan cek-halal (cek sertifikat halal BPJPH).",
+      "version": "1.1.0",
+      "author": {
+        "name": "irwanskom"
+      }
     }
   ]
 }

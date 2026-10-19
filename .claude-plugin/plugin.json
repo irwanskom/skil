@@ -1,7 +1,9 @@
 {
   "name": "skil",
-  "description": "Skill pribadi irwanskom: ui-ux-pro-max (panduan desain UI/UX) dan cek-halal (cek sertifikat halal BPJPH).",
-  "version": "1.0.0",
-  "author": { "name": "irwanskom" },
+  "description": "Skill pribadi irwanskom: ui-ux-pro-max (panduan desain UI/UX), design-taste-frontend (desain landing page yang tidak terlihat template), dan cek-halal (cek sertifikat halal BPJPH).",
+  "version": "1.1.0",
+  "author": {
+    "name": "irwanskom"
+  },
   "skills": "./.claude/skills/"
 }
