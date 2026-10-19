@@ -1,0 +1,5 @@
+# Satu kata kunci per baris: nomor registrasi, nama usaha, atau nama produk.
+# Baris yang diawali # diabaikan.
+ID00110000012345678901
+Toko Roti Contoh
+Keripik Singkong
